@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--legger til css min-->
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+
+    <!--legger til logo på navageringbaren på nettleseren-->
+    <link rel="icon" type="image/x-icon" href="https://media.discordapp.net/attachments/610028891687354369/1082204308776431646/stranda_icon.png">
+</head>
+<body>
+    
+
+
+      <!--lager en navageringsbar. trenger hjelp fra css da. jeg leger til alle indexfilene.-->
+      <ul>
+        <li><a href="/index .html">Hjem</a></li>
+        <div class="navbar">
+          <div class="dropdown">
+            <button class="dropbtn">Øvelser
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="index2.html">skulderpress</a>
+              <a href="index3.html">Nedtrekk</a>
+              <a href="index4.html">Sykkel</a>
+            </div>
+          </div>
+        </div>
+        <li><a href="/index5.html">linker</a></li>
+        <li><a href="/index6.html">Om Stranda</a></li>
+
+</ul>
+
+
+  <!--leger til halden logoen på topen av siden-->
+<div class="viklog">
+  <img class="log" src="https://cdn.discordapp.com/attachments/1028735493258612779/1072094993881239582/Stranda_Treningspark_Logo_markus_.png" alt="">
+</div>
+
+
+      <!--               
+      jeg lager en script der jeg legger til en alert boks som sier velkomen når man går in på hjemmesiden -->
+    <script>
+    window.onload = oppstart;
+
+        function oppstart() {
+
+            alert("velkommen!");  }
+    </script>
+
+
+      <style>
+      
+      
+      
+      img {
+        vertical-align: middle;
+      }
+      
+      /* Position the image container (needed to position the left and right arrows) */
+      .container {
+        position: relative;
+      }
+      
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+      
+      /* Add a pointer when hovering over the thumbnail images */
+      .cursor {
+        cursor: pointer;
+      }
+      
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        margin-right: 460px;
+        margin-left: 460px;
+        font-size: 20px;
+        border-radius: 0 1px 1px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius:1px 0 0 1px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* Container for image text */
+      .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+        margin-left: -10px;
+        margin-right: -30px;
+      }
+
+      /* plaserer de småbildene som de er plasert. uten denne koden vil bildene bli kjempe store */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+       
+      }
+      
+      /* Six columns side by side */
+      .column {
+        float: left;
+        width: 16.66%;
+        
+      }
+      
+      /* Add a transparency effect for thumnbail images */
+      .demo {
+        opacity: 0.6;
+      }
+      
+
+      /*  */
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+
+      </style>
+      <body>
+      <br><br><br><br><br><br>
+
+      <!--jeg legger til overskrift på nettsiden min-->
+      <h2 style="text-align:center">Stranda trimpark er nå åpen for alle!</h2>
+
+      <p>Tistastien har nå enda mer å by på. 25. november ble Stranda trimpark endelig åpnet. <br> Den kan hele Halden bruke akkurat når de vil, helt gratis.</p>
+      
+
+      <!--jeg legger til alle bildene i en slideshow fra 1-6-->
+        <!--gjør hr streken grå-->
+      <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+      <br>
+      <div class="body">
+      <div class="container">
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img src="https://cdn.discordapp.com/attachments/748526015755583680/1069556266583719936/IMG_1922.jpg" style="width:50%" alt="bilde av standa treningspark">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img src="https://www.halden.kommune.no/handlers/bv.ashx/iffd514cd-fe99-48c3-855b-1a514fd8e44f/w1000/h1000/q4536/k0bc006533436/3.jpg" style="width:50%" alt="bilde av standa treningspark">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img src="https://cdn.discordapp.com/attachments/835179863161569341/1069561638862209084/IMG_6113.jpg" style="width:50%">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="https://www.halden.kommune.no/handlers/bv.ashx/ib3275b35-08b7-4342-8427-22f93ae17865/w1000/h1000/q4537/kd42299e1beeb/6.jpg" style="width:50%" alt="bilde av standa treningspark">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img src="https://media.discordapp.net/attachments/835179863161569341/1069561639143219280/IMG_6114.jpg?width=875&height=656" style="width:50%" alt="bilde av standa treningspark">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img src="https://www.halden.kommune.no/handlers/bv.ashx/ib25dc863-d8a1-4d20-a451-4d73adaa38f4/w1000/h1000/q4534/ke543452c6a26/1.jpg" style="width:50%" alt="bilde av standa treningspark">
+        </div>
+        
+        <!--leger til at når man trykker på pilene vil det gå til neste bilde-->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <!--legger til bilder under slideshowet som viser hva som er på det neste bildet. tryker du på bildet nedenfor vil det bilde komme opp-->
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="https://cdn.discordapp.com/attachments/748526015755583680/1069556266583719936/IMG_1922.jpg" style="width:100%" onclick="currentSlide(1)" alt="Stranda treningspark">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://www.halden.kommune.no/handlers/bv.ashx/iffd514cd-fe99-48c3-855b-1a514fd8e44f/w1000/h1000/q4536/k0bc006533436/3.jpg" style="width:100%" onclick="currentSlide(2)" alt="Stranda treningspark">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://cdn.discordapp.com/attachments/835179863161569341/1069561638862209084/IMG_6113.jpg" style="width:100%" onclick="currentSlide(3)" alt="Stranda treningspark">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://www.halden.kommune.no/handlers/bv.ashx/ib3275b35-08b7-4342-8427-22f93ae17865/w1000/h1000/q4537/kd42299e1beeb/6.jpg" style="width:100%" onclick="currentSlide(4)" alt="Stranda treningspark">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://media.discordapp.net/attachments/835179863161569341/1069561639143219280/IMG_6114.jpg?width=875&height=656" style="width:100%" onclick="currentSlide(5)" alt="Stranda treningspark">
+          </div>    
+          <div class="column">
+            <img class="demo cursor" src="https://www.halden.kommune.no/handlers/bv.ashx/ib25dc863-d8a1-4d20-a451-4d73adaa38f4/w1000/h1000/q4534/ke543452c6a26/1.jpg" style="width:100%" onclick="currentSlide(6)" alt="Stranda treningspark">
+          </div>
+        </div>
+      </div>
+      
+      <!--kode som gjør at bildene bytter fra hverander + at det er en smooth slide når man trykker på pilen-->
+      <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+     //kode som gjør at bildene bytter fra hverander + at det er en smooth slide når man trykker på pilen
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+
+
+
+  <!--legger til underekst/ informasjon til halden kommune på bunnen av siden-->
+  <br><br><br><br>
+
+  <div class="grid-container2"> <h3>
+    
+ ble demonstrert at treningsutstyret i parken kan brukes av de aller fleste, og er tilrettelagt at rullestolbrukere kan nyte parken uten hinder. <br> <br>                                                                                                                                                                                                                                                                           Ledige stillinger
+                                                                                                                                                                                                                                
+  Alt er justerbart og passer til både sportsfanatikere, sofa-mennesker og alt imellom. <br> 
+
+  Det tok derfor ikke lang tid før ordfører Linn Laupsa hang seg på flere av maskinene - iført penklær og ordfører-kjede. <br> <br>
+  
+     Hvis jeg skulle ha trent noe sted, så måtte det jo ha blitt her! Kjempeflott å kombinere med hele Tistastien, <br> sier hun.
+  Det er Norsk Tipping som står bak finansieringen av den nye trimparken. <br> 
+   Hvert år kan kommuner, lag og foreninger søke om tilskudd til nettopp denne type sak, oppgradering av gamle anlegg. </h3> </div>  
+
+
+  </h3>         
+
+      <br><br><br><br>
+      <!--legger til informasjon på bunnen av siden ved hjelp av css .some og grid-container-->
+      <div class="some">
+        <br><br>
+        <div class="grid-container">
+          <div>
+           <h3>Kontakt servicesenteret:<br> </h3>
+  <!--gjør hr streken grå-->
+          <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+<br>
+          <a href="https://www.halden.kommune.no/kontakt-oss/kontaktinformasjon/"> Kontaktinformasjon </a><br> <br>
+          
+          Telefon: <a href="tel:69174500">69 17 45 00</a> <br> <br>
+          
+          Org. nr.:  95 915 90 92 <br> <br>
+          
+          
+          <a href="https://www.halden.kommune.no/kontakt-oss/vakt-og-beredskap/"> Vakt og beredskap </a> <br> <br>
+
+          <a href="mailto:postmottak@halden.kommune.no">Halden epost</a></div>
+          <div>
+            
+            <h3>
+            Besøkadresse:</h3> 
+  <!--gjør hr streken grå-->
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <br>  
+            Rådhuset <br> <br>
+            Storgata 8 <br> <br>
+            1771 Halden <br> 
+            <h3>
+            Postadresse: </h3>
+              <!--gjør hr streken grå-->
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+            Halden kommune<br> <br>
+
+            Postboks 150<br> <br>
+
+            1751 Halden
+          </div>
+          <div> <h3> Om Halden kommune:</h3>
+              <!--gjør hr streken grå-->
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+<br>
+<!--legger til linker i bunnen av siden. linkene er fra halden kommune-->
+            <a href="https://www.halden.kommune.no/varsle/"> Varsle om kritikkverdige forhold </a> <br><br>
+
+            <a href="https://www.halden.kommune.no/for-media/"> For media </a><br><br> 
+            
+            <a href="https://www.halden.kommune.no/tjenester/byen-og-kommunen/informasjon-om-halden/fakta-om-halden/"> Fakta om kommunen </a> <br><br>
+            
+            <a href="https://www.halden.kommune.no/personvernerklaring/"> Personvernerklæring </a> <br><br>
+            
+            <a href="https://www.halden.kommune.no/tilgjengelighetserklaring/"> Tilgjengelighetserklæring </a> <br><br>
+            
+            <a href="https://www.halden.kommune.no/for-ansatte/"> For ansatte </a> 
+
+
+
+</body>
+</html>
+
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--legger til css i min kode-->
+    <link rel="stylesheet" href="/style.css">
+    <title>stranda treningspark</title>
+    <!--legger til logo på navageringbaren på nettleseren-->
+    <link rel="icon" type="image/x-icon" href="https://media.discordapp.net/attachments/610028891687354369/1082204308776431646/stranda_icon.png">
+</head>
+<body>
+    
+   
+      
+
+      <!--lager en navageringsbar. trenger hjelp fra css da. jeg leger til alle indexfilene.-->
+      <ul>
+        <li><a href="/index .html">Hjem</a></li>
+        <div class="navbar">
+          <div class="dropdown">
+            <button class="dropbtn">Øvelser
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="index2.html">skulderpress</a>
+              <a href="index3.html">Nedtrekk</a>
+              <a href="index4.html">Sykkel</a>
+            </div>
+          </div>
+        </div>
+        <li><a href="/index5.html">linker</a></li>
+        <li><a href="/index6.html">Om Stranda</a></li>
+
+</ul>
+  <!--leger til halden logoen på topen av siden-->
+<div class="viklog">
+  <img class="log" src="https://cdn.discordapp.com/attachments/1028735493258612779/1072094993881239582/Stranda_Treningspark_Logo_markus_.png" alt="">
+</div>
+
+
+
+
+<div class="mid"> 
+  <!-- jeg leger til overskrift/underoverskrift ved hjelp av h1 og h2-->
+  <h1>velkommen til treningsapperatene på Halden Videregående Skole!</h1>
+  <h2>Sykkel</h2>
+
+<!--en bilde-tag med en id "bilde. gjør at det er et bilde på siden før man trykker på en radioknapp.-->
+<img src="#" alt="Bilde" id="bilde" width="400" height="400">
+<p id="tekst"></p>
+
+
+<!--radioknapper, hvis du trykker på de kommer det et bilde-->
+<p><input type="Radio" name="BildeListe" id="rbtnBilde1" value="https://cdn.discordapp.com/attachments/748526015755583680/1069556265396731904/IMG_1923.jpg">skulderpress</p>
+<p><input type="Radio" name="BildeListe" id="rbtnBilde2" value="https://cdn.discordapp.com/attachments/748526015755583680/1069556263899365446/IMG_1926.jpg">vekt i kg</p>  
+<p><input type="Radio" name="BildeListe" id="rbtnBilde3" value="https://cdn.discordapp.com/attachments/748526015755583680/1069556264872448051/IMG_1924.jpg">set deg ned i stolen</p> 
+<p><input type="Radio" name="BildeListe" id="rbtnBilde4" value="https://cdn.discordapp.com/attachments/748526015755583680/1069556264377536583/IMG_1925.jpg">dytt opp</p> 
+
+
+
+<script>
+
+
+
+
+
+
+window.onload = oppstart;
+
+    function oppstart() {
+      //radioknapper, hvis du trykker på de kommer det et bilde
+        document.getElementById("rbtnBilde1").onclick = visBilde1;
+        document.getElementById("rbtnBilde2").onclick = visBilde2;
+        document.getElementById("rbtnBilde3").onclick = visBilde3;
+        document.getElementById("rbtnBilde4").onclick = visBilde4;
+        
+
+
+        //For at første bilde skal vises som default
+        document.getElementById("bilde").src = document.getElementById("rbtnBilde1").value;
+
+        //For at første radioknapp skal være huket av som default:
+        document.getElementById("rbtnBilde1").checked = true;
+
+        document.getElementById("tekst").innerHTML = "her ser du skulderpress aperatet. det første du gjør når du kommer fram til apperatet er å sette seg ned."
+
+         //radioknapper, hvis du trykker på de kommer det et bilde + tekst (4 bilder + tekster)
+    }
+
+    function visBilde1() {
+        document.getElementById("bilde").src = document.getElementById("rbtnBilde1").value;
+        document.getElementById("tekst").innerHTML = "her ser du skulderpress aperatet. det første du gjør når du kommer fram til apperatet er å sette seg ned."
+    }
+
+    function visBilde2() {
+        document.getElementById("bilde").src = document.getElementById("rbtnBilde2").value;
+        document.getElementById("tekst").innerHTML = "når du siter på aperatet må du velge hva slags vekt du vil løfte. dette gjør du ved å snurre hjulet dit du vil ved hjelp av det røde merket på hjulet."
+    }
+
+    function visBilde3() {
+        document.getElementById("bilde").src = document.getElementById("rbtnBilde3").value;
+        document.getElementById("tekst").innerHTML = "nå er du klar til å løfte!"
+    }
+
+    function visBilde4() {
+        document.getElementById("bilde").src = document.getElementById("rbtnBilde4").value;
+        document.getElementById("tekst").innerHTML = "dytt opp og ned. husk og bruk vekt du kan løfte ca 10 ganger etter hverandre!"
+    }
+
+</script>
+
+
+</div>
+
+
+      <br><br>
+<!--legger til informasjon på bunnen av siden ved hjelp av css .some og grid-container-->
+      <div class="some">
+        <br><br>
+        <div class="grid-container">
+          <div>
+           <h3>Kontakt servicesenteret:<br> </h3>
+<!--gjør hr streken grå-->
+           <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+<br>
+          <a href="https://www.halden.kommune.no/kontakt-oss/kontaktinformasjon/"> Kontaktinformasjon </a><br> <br>
+          
+          Telefon: <a href="tel:69174500">69 17 45 00</a> <br> <br>
+          
+          Org. nr.:  95 915 90 92 <br> <br>
+          
+          
+          <a href="https://www.halden.kommune.no/kontakt-oss/vakt-og-beredskap/"> Vakt og beredskap </a> <br> <br>
+
+          <a href="mailto:postmottak@halden.kommune.no">Halden epost</a></div>
+          <div>
+            
+            <h3>
+            Besøkadresse:</h3> 
+            <!--gjør hr streken grå-->
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <br>  
+            Rådhuset <br> <br>
+            Storgata 8 <br> <br>
+            1771 Halden <br> 
+            <h3>
+            Postadresse: </h3>
+            
+            <!--gjør hr streken grå-->
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+            Halden kommune<br> <br>
+
+            Postboks 150<br> <br>
+
+            1751 Halden
+          </div>
+          <div> <h3> Om Halden kommune:</h3>
+            <!--gjør hr streken grå-->
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+<br>
+  <!--legger til linker til halden kommune sin nettside osv-->
+            <a href="https://www.halden.kommune.no/varsle/"> Varsle om kritikkverdige forhold </a> <br><br>
+
+            <a href="https://www.halden.kommune.no/for-media/"> For media </a><br><br> 
+            
+            <a href="https://www.halden.kommune.no/tjenester/byen-og-kommunen/informasjon-om-halden/fakta-om-halden/"> Fakta om kommunen </a> <br><br>
+            
+            <a href="https://www.halden.kommune.no/personvernerklaring/"> Personvernerklæring </a> <br><br>
+            
+            <a href="https://www.halden.kommune.no/tilgjengelighetserklaring/"> Tilgjengelighetserklæring </a> <br><br>
+            
+            <a href="https://www.halden.kommune.no/for-ansatte/"> For ansatte </a> <br><br>
+
+
+</body>
+</html>
+
+</body>
+</html>
+</body>
+</html>
